@@ -2,34 +2,33 @@ import { expect, Locator, Page } from '@playwright/test';
 
 export class LoginPage {
   readonly page: Page;
-  readonly username: Locator;
-  readonly password: Locator;
-  readonly submit: Locator;
-  readonly error: Locator;
+  readonly usernameTextbox: Locator;
+  readonly passwordTextbox: Locator;
+  readonly submitButton: Locator;
+  readonly errorLabel: Locator;
 
   constructor(page: Page) {
     this.page = page;
-    this.username = page.locator('input[name="username"]');
-    this.password = page.locator('input[name="password"]');
-    this.submit = page.locator('button[type="submit"]');
-    this.error = page.locator('.oxd-text.oxd-text--p.oxd-alert-content-text');
+    this.usernameTextbox = page.locator('input[name="username"]');
+    this.passwordTextbox = page.locator('input[name="password"]');
+    this.submitButton = page.locator('button[type="submit"]');
+    this.errorLabel = page.locator('.oxd-text.oxd-text--p.oxd-alert-content-text');
   }
 
   async goto() {
     await this.page.goto('/');
-    // Ensure login form present
-    await expect(this.username).toBeVisible();
-    await expect(this.password).toBeVisible();
+    await expect(this.usernameTextbox).toBeVisible();
+    await expect(this.passwordTextbox).toBeVisible();
   }
 
   async login(user: { username: string; password: string }) {
-    await this.username.fill(user.username);
-    await this.password.fill(user.password);
-    await this.submit.click();
+    await this.usernameTextbox.fill(user.username);
+    await this.passwordTextbox.fill(user.password);
+    await this.submitButton.click();
   }
 
   async assertErrorVisible() {
-    await expect(this.error).toBeVisible();
-    expect(await this.error.textContent()).toBe("Invalid credentials")
+    await expect(this.errorLabel).toBeVisible();
+    expect(await this.errorLabel.textContent()).toBe("Invalid credentials")
   }
 }

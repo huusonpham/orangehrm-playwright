@@ -24,7 +24,6 @@ test.describe('Login', () => {
 
   test('trims spaces around username and stays on login @regression', async ({ page }) => {
     const login = new LoginPage(page);
-    const dashboard = new DashboardPage(page);
     await login.goto();
     await login.login({ username: '  ' + creds.username, password: creds.password });
     await login.assertErrorVisible();
