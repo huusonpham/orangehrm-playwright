@@ -1,0 +1,56 @@
+<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="43.615013999999995">
+<testsuite name="api/sample.api.spec.ts" timestamp="2025-08-15T09:26:56.575Z" hostname="Chromium" tests="1" failures="0" skipped="0" time="2.255" errors="0">
+<testcase name="API testing › can GET a public API @api" classname="api/sample.api.spec.ts" time="2.255">
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2025-08-15T09:26:56.575Z" hostname="Chromium" tests="3" failures="0" skipped="0" time="21.584" errors="0">
+<testcase name="Login › valid login redirects to Dashboard @smoke" classname="ui/login.spec.ts" time="8.728">
+</testcase>
+<testcase name="Login › invalid password shows error and stays on login @regression" classname="ui/login.spec.ts" time="6.159">
+</testcase>
+<testcase name="Login › trims spaces around username and stays on login @regression" classname="ui/login.spec.ts" time="6.697">
+</testcase>
+</testsuite>
+<testsuite name="ui/search.spec.ts" timestamp="2025-08-15T09:26:56.575Z" hostname="Chromium" tests="2" failures="0" skipped="0" time="16.58" errors="0">
+<testcase name="global menu search navigates to target module @smoke" classname="ui/search.spec.ts" time="9.071">
+</testcase>
+<testcase name="global search shows no suggestions for nonsense @regression" classname="ui/search.spec.ts" time="7.509">
+</testcase>
+</testsuite>
+<testsuite name="api/sample.api.spec.ts" timestamp="2025-08-15T09:26:56.575Z" hostname="Firefox" tests="1" failures="0" skipped="0" time="2.261" errors="0">
+<testcase name="API testing › can GET a public API @api" classname="api/sample.api.spec.ts" time="2.261">
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2025-08-15T09:26:56.575Z" hostname="Firefox" tests="3" failures="0" skipped="0" time="24.49" errors="0">
+<testcase name="Login › valid login redirects to Dashboard @smoke" classname="ui/login.spec.ts" time="9.359">
+</testcase>
+<testcase name="Login › invalid password shows error and stays on login @regression" classname="ui/login.spec.ts" time="8.365">
+</testcase>
+<testcase name="Login › trims spaces around username and stays on login @regression" classname="ui/login.spec.ts" time="6.766">
+</testcase>
+</testsuite>
+<testsuite name="ui/search.spec.ts" timestamp="2025-08-15T09:26:56.575Z" hostname="Firefox" tests="2" failures="0" skipped="0" time="19.465" errors="0">
+<testcase name="global menu search navigates to target module @smoke" classname="ui/search.spec.ts" time="10.49">
+</testcase>
+<testcase name="global search shows no suggestions for nonsense @regression" classname="ui/search.spec.ts" time="8.975">
+</testcase>
+</testsuite>
+<testsuite name="api/sample.api.spec.ts" timestamp="2025-08-15T09:26:56.575Z" hostname="WebKit" tests="1" failures="0" skipped="0" time="1.96" errors="0">
+<testcase name="API testing › can GET a public API @api" classname="api/sample.api.spec.ts" time="1.96">
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2025-08-15T09:26:56.575Z" hostname="WebKit" tests="3" failures="0" skipped="0" time="23.253" errors="0">
+<testcase name="Login › valid login redirects to Dashboard @smoke" classname="ui/login.spec.ts" time="7.913">
+</testcase>
+<testcase name="Login › invalid password shows error and stays on login @regression" classname="ui/login.spec.ts" time="8.312">
+</testcase>
+<testcase name="Login › trims spaces around username and stays on login @regression" classname="ui/login.spec.ts" time="7.028">
+</testcase>
+</testsuite>
+<testsuite name="ui/search.spec.ts" timestamp="2025-08-15T09:26:56.575Z" hostname="WebKit" tests="2" failures="0" skipped="0" time="17.246" errors="0">
+<testcase name="global menu search navigates to target module @smoke" classname="ui/search.spec.ts" time="9.588">
+</testcase>
+<testcase name="global search shows no suggestions for nonsense @regression" classname="ui/search.spec.ts" time="7.658">
+</testcase>
+</testsuite>
+</testsuites>

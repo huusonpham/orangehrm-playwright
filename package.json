@@ -1,0 +1,25 @@
+{
+  "name": "playwright-ts-orangehrm-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E2E automation starter: Playwright + TypeScript for OrangeHRM demo, with UI/API tests, CI, and k6 performance sample.",
+  "scripts": {
+    "preinstall": "node -e \"process.exit(0)\"",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:regression": "playwright test --grep @regression",
+    "report": "playwright show-report reports/html",
+    "postinstall": "npx playwright install --with-deps"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "prettier": "^3.3.3",
+    "@playwright/test": "^1.46.0",
+    "typescript": "^5.5.4"
+  }
+}
