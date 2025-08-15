@@ -8,7 +8,7 @@ const CI = !!process.env.CI;
 export default defineConfig({
   testDir: './tests',
   timeout: 60_000,
-  expect: { timeout: 10_000 },
+  expect: { timeout: 10000 },
   reporter: [
     ['list'],
     ['junit', { outputFile: 'reports/junit/results.xml' }],

@@ -2,7 +2,16 @@ This is a **lightweight performance testing** using k6, separate from Playwright
 
 ### Run locally
 1) Install k6: https://k6.io/docs/get-started/installation/
+- MacOS:
+```bash
+brew install k6
+```
+- Windows:
+```bash
+winget install k6 --source winget
+```
+
 2) Execute:
 ```bash
-k6 run k6/script.js
+k6 run k6/performance.js
 ```

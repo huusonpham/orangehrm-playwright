@@ -1,10 +1,10 @@
 # Playwright + TypeScript E2E (OrangeHRM)
 
-Modern, modular E2E framework with cross-browser projects, UI/API examples, CI configs, and a k6 performance sample.
+Modular E2E framework with cross-browser projects, UI/API test cases, CI configs, and a k6 performance case.
 
 ## Features
 - **Cross-browser**: Chromium, Firefox, WebKit (configured in `playwright.config.ts`)
-- **Modular**: Page Object Model under `src/pages`, helpers in `src/utils`
+- **Modular**: Page Object Model under `src/pages`
 - **CI-ready**: GitHub Actions included
 - **Configurable**: `.env` controls base URL, creds, and search terms
 - **Reporting**: List + HTML + JUnit (XML) reports in `reports/`
